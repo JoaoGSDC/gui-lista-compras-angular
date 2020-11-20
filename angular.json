@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "gui-lista-compras-angular"
+  "defaultProject": "gui-lista-compras-angular",
+  "cli": {
+    "analytics": "f37551cc-f501-46a1-a5ec-b556d50f8c63"
+  }
 }

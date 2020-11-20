@@ -1,0 +1,19 @@
+<div class="list-container">
+    <div class="list-card">
+        <div class="list-card-header">Lista de Compras</div>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <input type="text" formControlName="item" />
+            <button type="submit">Adicionar Item</button>
+        </form>
+        <div class="items-container">
+            <ul>
+                <li *ngFor="let listItem of listItems; let i = index" (click)="setItemValue(listItem)">
+                    {{i + 1}}. {{ listItem.item }}
+                    <label (click)="deleteItemList(listItem)">
+                        <i class="material-icons">delete</i>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
